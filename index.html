@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - AR Shourov</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p class="greeting">Hi..! 👋</p>
+            <h1><small>Myself</small> AR <span>Shourov</span></h1>
+            <h2 class="role">I'm a <span id="typing"></span><span class="cursor">|</span></h2>
+            <p class="location"><i class="fa-solid fa-location-dot"></i>From Bangladesh</p>
+        </div>
+    </div>
+</div>
+
+<!-- about -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Work/4.jpeg" alt="AR Shourov">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Computer Science and Engineering graduate with hands-on experience developing web, IoT, and software-based applications. Experienced in leading project teams, solving technical problems, and developing practical technology solutions. Seeking an entry-level software development opportunity to apply technical skills and contribute to real-world projects.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(event, 'education')">Education</p>
+                    <p class="tab-links" onclick="opentab(event, 'hobby')">Hobbies</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="education">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="timeline-year">2022 - 2026</span>
+                            <div class="timeline-card">
+                                <h3><i class="fa-solid fa-graduation-cap"></i>BSc (Hons) in CSE</h3>
+                                <p class="institute">Bangladesh Army University of Engineering & Technology (BAUET)</p>
+                                <span class="grade">CGPA: 3.61 / 4.00</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-year">2018 - 2020</span>
+                            <div class="timeline-card">
+                                <h3><i class="fa-solid fa-book-open"></i>HSC</h3>
+                                <p class="institute">Dighapatia M.K. Hon's College</p>
+                                <span class="grade">GPA: 4.58 / 5.00</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-year">2009 - 2018</span>
+                            <div class="timeline-card">
+                                <h3><i class="fa-solid fa-school"></i>SSC</h3>
+                                <p class="institute">Natore Govt. Boy's High School</p>
+                                <span class="grade">GPA: 4.33 / 5.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-contents" id="hobby">
+                    <div class="hobby-grid">
+                        <div class="hobby-card"><i class="fa-solid fa-gamepad"></i><h3>Playing Games</h3><p>Exploring worlds and challenges</p></div>
+                        <div class="hobby-card"><i class="fa-solid fa-headphones"></i><h3>Listening to Music</h3><p>Music fuels my creativity</p></div>
+                        <div class="hobby-card"><i class="fa-solid fa-clock"></i><h3>Watch Collecting</h3><p>Admiring craftsmanship and design</p></div>
+                        <div class="hobby-card"><i class="fa-solid fa-shoe-prints"></i><h3>Sneaker Collecting</h3><p>Style, comfort, and culture</p></div>
+                        <div class="hobby-card"><i class="fa-solid fa-plane"></i><h3>Traveling</h3><p>Discovering new places and cultures</p></div>
+                        <div class="hobby-card"><i class="fa-solid fa-guitar"></i><h3>Jamming with Friends</h3><p>Singing music and making memories together</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- skills -->
+<div id="skill">
+    <div class="container">
+        <h1 class="sub-title">Technical Skills</h1>
+        <div class="services-list">
+            <div>
+                <div class="skill-icons"><i class="devicon-cplusplus-plain colored"></i></div>
+                <h2>C++</h2>
+                <p>Proficient in C++ programming with a strong understanding of object-oriented programming, problem-solving, data structures, and algorithm development.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <div class="skill-icons"><i class="devicon-javascript-plain colored"></i></div>
+                <h2>JavaScript</h2>
+                <p>Proficient in JavaScript with a strong understanding of web development, DOM manipulation, event handling, and building interactive and dynamic web applications.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <div class="skill-icons"><i class="devicon-html5-plain colored"></i><i class="devicon-css3-plain colored"></i></div>
+                <h2>HTML | CSS</h2>
+                <p>Proficient in HTML and CSS with a strong understanding of creating responsive, well-structured, and visually appealing web pages and user interfaces.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <div class="skill-icons"><i class="devicon-python-plain colored"></i></div>
+                <h2>Python</h2>
+                <p>Proficient in Python programming with a strong understanding of object-oriented programming, data handling, problem-solving, and developing efficient applications and scripts.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- projects -->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Work/Gearheads.jpg" alt="Gearheads project">
+                <div class="layer">
+                    <h3>Gearheads</h3>
+                    <p>Gearheads is a vehicle management project designed to provide users with a convenient platform for managing essential vehicle-related services. The project focused on developing a user-friendly system that simplifies vehicle management and improves the overall user experience.</p>
+                    <a href="https://github.com/ARShourov/Gearheads.git" target="_blank" rel="noopener noreferrer" aria-label="Open Gearheads on GitHub"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Work/Heart Monitoring System.jpeg" alt="Heart Monitoring System project">
+                <div class="layer">
+                    <h3>Heart Monitoring System</h3>
+                    <p>The Real-Time Heart Monitoring System is an IoT-based project designed to continuously monitor heart activity and collect cardiac data in real time. It provides a convenient way to track heart rate and ECG signals, helping users monitor their heart condition through real-time data.</p>
+                    <a href="https://github.com/ARShourov" target="_blank" rel="noopener noreferrer" aria-label="Open Heart Monitoring System on GitHub"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Work/EBS.jpg" alt="Electricity Billing System project">
+                <div class="layer">
+                    <h3>Electricity Billing System</h3>
+                    <p>The Electricity Billing System is a software-based project designed to automate and simplify the process of calculating and managing electricity bills based on users’ power consumption. It provides features for managing customer information, recording meter readings, generating bills, and maintaining payment records.</p>
+                    <a href="https://github.com/ARShourov" target="_blank" rel="noopener noreferrer" aria-label="Open Electricity Billing System on GitHub"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="center"><a href="https://github.com/ARShourov" target="_blank" rel="noopener noreferrer" class="btn btn-outline">See more</a></div>
+    </div>
+</div>
+
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact</h1>
+                <p><i class="fa-solid fa-envelope"></i>arshourov40@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>01724-074434</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/abdurrahman.shourov?mibextid=ZbWKwL" aria-label="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com/arshourov2?stkn=dWo4MHgwbTZucHpx" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ar-shourov-70b27525a?utm_source=share_via&utm_content=profile&utm_medium=member_android" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Work/CSE Cover page.pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © AR Shourov. Made by AR Shourov (Computer Science & Engineering Graduate | Software Developer)</p>
+    </div>
+</div>
+
+<script>
+    /* tabs */
+    function opentab(e, tabname){
+        document.querySelectorAll(".tab-links").forEach(t => t.classList.remove("active-link"));
+        document.querySelectorAll(".tab-contents").forEach(t => t.classList.remove("active-tab"));
+        e.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    /* mobile menu */
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){ sidemenu.style.right = "0"; }
+    function closemenu(){ sidemenu.style.right = "-220px"; }
+
+    /* navbar: highlight current section + glass effect on scroll */
+    var navbar = document.querySelector("nav");
+    var navLinks = document.querySelectorAll("#sidemenu a");
+    var sections = Array.from(navLinks).map(a => document.querySelector(a.getAttribute("href")));
+    function onScroll(){
+        navbar.classList.toggle("scrolled", window.scrollY > 50);
+        var pos = window.scrollY + 150, current = 0;
+        sections.forEach((s, i) => { if (s.offsetTop <= pos) current = i; });
+        navLinks.forEach((a, i) => a.classList.toggle("active", i === current));
+    }
+    window.addEventListener("scroll", onScroll);
+    onScroll();
+    navLinks.forEach(a => a.addEventListener("click", closemenu));
+
+    /* typing animation: types "Software Developer" once */
+    var text = "Software Developer", i = 0, typing = document.getElementById("typing");
+    (function type(){
+        if (i <= text.length){
+            typing.textContent = text.substring(0, i++);
+            setTimeout(type, 300);
+        }
+    })();
+
+    /* contact form */
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwJgD__2x9-SU0z64_ngCbte7Qm-5UqkSWiNsePXFGW3GzjJp2eCTwvsebfKxDAIRHZ/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(() => {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(() => msg.innerHTML = "", 3000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message));
+    });
+</script>
+</body>
+</html>
